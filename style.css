@@ -1,0 +1,259 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+ul{
+    padding: 0;
+}
+button{
+    cursor: pointer;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(217, 28%, 15%);
+    color: #fff;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 25px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+nav ul a, .feature-link a{
+    color: #fff;
+    text-decoration: none;
+}
+section{
+    margin: auto;
+    padding: 50px;
+}
+h1{
+    font-size: 34px;
+    margin: 0;
+}
+h5{
+    margin: 0;
+    font-weight: 700;
+}
+nav a:hover{
+ border-bottom: 2px solid #fff;       
+}
+.features, .productive, .testimonials{
+    background-color: hsl(218, 28%, 13%);
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    /* background-color: #fff; */
+    background-image: url('./images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -756px;
+    background-position-y: 359px;
+}
+.hero-text{
+    width: 50%;
+}
+.primary-btn{
+    background-color: hsl(198, 60%, 50%);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    width: 50%;
+    color: #fff;
+}
+.features{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+.content-features p, h4{
+    width: 65%;
+    margin: auto;
+    padding: 10px;
+}
+.content-features{
+    padding: 50px;
+}
+.productive a{
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+.next-icon{
+    width: 12px;
+}
+.productive{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pro-text{
+    width: 40%;
+}
+.pro-text a:hover, .feature-link a:hover{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.testimonials{
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+.bg-quote{
+    position: absolute;
+    left: 43px;
+    top: 19px;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-img img{
+    border-radius: 50%;
+    width: 30px;
+}
+.testi-box{
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px;
+}
+.user-detail span{
+    font-size: 12px;
+}
+.cta{
+    text-align: center;
+    max-width: 727px;
+    background-color: hsl(219, 30%, 18%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form{
+    display: flex;
+    gap: 10px;
+}
+.form input{
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    /* width: 70%; */
+    width: 100%;
+}
+.submit-btn{
+    background-color: hsl(198, 60%, 50%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #fff;
+    width: 208px;
+}
+.feature-link ul{
+    list-style: none;
+}
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: hsl(216, 53%, 9%);
+    padding: 45px;
+}
+.phone, .mail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.address{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.feature-link ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+.logo{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.social-media{
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    section{
+        margin: auto;
+        padding: 20px;
+    }
+    nav{
+        margin: 0;
+        align-items: center;
+    }
+    nav img{
+        /* display: none; */
+        width: 85px;
+        height: 25px;
+    }
+    nav ul{
+        gap: 10px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .hero img, .hero-text, .productive img, .pro-text{
+        width: 100%;
+    }
+    .features, .productive, .testimonials{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .content-features{
+        padding: 0;
+    }
+    .next-icon{
+        width: 20px;
+    }
+    .bg-quote{
+        left: 14px;
+        top: 2px;
+    }
+    .form{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .submit-btn, .logo{
+        width: 100%;
+    }
+    .form input{
+        padding: 10px 0;
+    }
+    footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo{
+        gap: 20px;
+    }
+    .logo-footer{
+        width: 50%;
+    }
+}
